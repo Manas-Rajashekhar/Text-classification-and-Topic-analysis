@@ -51,7 +51,7 @@ print(len(df_test))
 
 def getcleaned(dtf):
     d=dtf.loc[:,'Abstract']
-    cleaned_data = []                              # emove puntuation , conver to lower case in this function and cleaned data is obtained
+    cleaned_data = []                              # remove puntuation , conver to lower case in this function and cleaned data is obtained
     for i in range(len(dtf)):
         d[i] = re.sub(r'[^\w\s]','',str(d[i]))
         d[i] = d[i].lower()
